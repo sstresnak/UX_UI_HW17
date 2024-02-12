@@ -1,41 +1,108 @@
 .inline-block {
   display: inline-block;
-  vertical-align: center;
-  }
-  header {
-    background-color: #C3CFB8;
-  }
-  body {
-    background-color: #C3CFB8;
-  }
-  .logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-  }
-  nav {
-    width: 73%;
-    padding: 1%;
-  }
-  header ul {
-    width: 50%;
-    margin-left: auto; 
-  }
-  .heroImg {
-    height: 600px;
-    padding: 25px;
-  }
-  .content {
-    width: 500px;
-    margin: 0 auto;
-  }
-  footer {
-    background-color: #6F8F71;
-    text-align: center;
-  }
-  footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0;
-    text-align: center;
-  }
+  vertical-align: top;
+}
+
+header {
+  background-color: #C3CFB8;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Krub", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  background-color: #C3CFB8;
+}
+
+.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: left;
+}
+
+nav {
+  text-align: right;
+  padding: 1%;
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.heroImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+  padding: 50px 100px 30px;
+}
+
+.heroImg .content {
+  width: 50%;
+} 
+
+.heroImg img {
+  width: 300px;
+  height: auto;
+}
+.heroImg h1, .heroImg h3, .heroImg p {
+  margin: 0;
+}
+.heroImg h1 {
+  font-size: 96px;  
+  font-family: "Marcellus", serif;
+  color: white;
+}
+.heroImg h3 {
+  font-size: 20px;
+  font-family: 'Livvic', sans-serif;
+  font-style: italic;
+  color: white;
+}
+.heroImg p {
+  font-size: 16px;
+  font-family: 'Livvic', sans-serif;
+  font-style: normal;
+  color: white;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'Marcellus';
+    src: url('path/to/marcellus.woff2') format('woff2'),
+         url('path/to/marcellus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+footer {
+  background-color: #6F8F71;
+  text-align: center;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  text-align: center;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 50px; 
+  font-family: "Krub", sans-serif;
+  color: white;
+}
